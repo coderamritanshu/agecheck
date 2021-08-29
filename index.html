@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<meta charset="UTF-8">
+<meta keywords="age, agechecker, vote, votechecker, application, web application, amritanshu">
+<meta description="This application is used to check the age whether the age of the person is able to vote or not">
 <head>
     <style>
         #box {
@@ -81,7 +83,7 @@
                 var n, a;
                 n = document.getElementById("name").value;
                 a = document.getElementById("age").value;
-                if (a > 18) {
+                if (a >= 18) {
                     document.getElementById("nameBoy").innerHTML = `Name: ${n}`;
                     document.getElementById("yearBoy").innerHTML = `Age: ${a}`;
                     document.getElementById("checkEligibility").innerHTML = `Eligibilty: Voting Allowed`;
